@@ -1,0 +1,56 @@
+{
+  "name": "hidden-gem-rally-layouts",
+  "version": "1.0.0",
+  "description": "Layouts for broadcast",
+  "nodecg": {
+    "compatibleRange": "^1.9.0",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.5.0"
+    },
+    "graphics": [
+      {
+        "file": "2P_16x9_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "2P_16x9_No_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_16x9_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_16x9_No_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_4x3_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_4x3_No_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "layout-brb.html",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "dashboardPanels": [
+      {
+        "name": "Layout Control",
+        "title": "Layout Control",
+        "file": "commentator-control.html",
+        "width": 4
+      }
+    ]
+  }
+}

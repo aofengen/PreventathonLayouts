@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="commentator-control.css">
+</head>
+<body>
+    <!-- Commentary Controls -->
+    <div class="grid-container">
+        <span class="grid-item">.</span>
+        <span class="grid-item">Vis</span>
+        <span class="grid-item">Name</span>
+        <span class="grid-item">Pronouns</span>
+        <span class="grid-item">Host</span>
+        <span class="grid-item">.</span>
+        <input type="text" class="grid-item" id="comm0-name">
+        <input type="text" class="grid-item" id="comm0-pronouns">
+        <span class="grid-item">Comm 1</span>
+        <input type="checkbox" id="comm1-vis" name="comm1-vis" onclick="updateComms()">
+        <input type="text" class="grid-item" id="comm1-name">
+        <input type="text" class="grid-item" id="comm1-pronouns">
+        <span class="grid-item">Comm 2</span>
+        <input type="checkbox" id="comm2-vis" name="comm2-vis" onclick="updateComms()">
+        <input type="text" class="grid-item" id="comm2-name">
+        <input type="text" class="grid-item" id="comm2-pronouns">
+        <span class="grid-item">Comm 3</span>
+        <input type="checkbox" id="comm3-vis" name="comm3-vis" onclick="updateComms()">
+        <input type="text" class="grid-item" id="comm3-name">
+        <input type="text" class="grid-item" id="comm3-pronouns">
+    </div>
+    <button id="save" onclick="updateComms()">Save</button>
+    <br><br>
+
+    <!-- JavaScript -->
+    <script src="commentator-control.js"></script>
+</body>
+</html>

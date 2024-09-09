@@ -1,0 +1,119 @@
+#nameplate0 {
+  left: 0px;
+  top: 278px;
+  width: 404px;
+}
+
+.twitchText, .runnerText {
+  font-size: 25px;
+}
+
+.nameplateLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.pronouns {
+  font-size: 25px;
+}
+
+#hostname {
+  position: absolute;
+  left: 150px;
+  top: 346px;
+  width: 404px;
+  font-size: 25px;
+}
+
+#hostpronouns {
+  position: absolute;
+  left: -10px;
+  top: 348px;
+}
+
+#comms1name {
+  position: absolute;
+  top: 402px;
+  left: 45px;
+  font-size: 25px;
+}
+
+#comms1pro {
+  position: absolute;
+  top: 405px;
+  left: 210px;
+}
+
+#comms2name {
+  position: absolute;
+  top: 442px;
+  left: 45px;
+  font-size: 28px;
+}
+
+#comms2pro {
+  position: absolute;
+  top: 445px;
+  left: 210px;
+}
+
+#runInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: 685px;
+  top: 585px;
+  width: 500px;
+  height: 95px;
+}
+
+#gameName {
+  width: 500px;
+  height: 60px;
+}
+
+#runInfo {
+  display: flex;
+  flex-wrap: wrap;
+  position: unset;
+  width: 500px;
+  height: 35px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  position: unset;
+  width: 500px;
+  height: 60px;
+  font-size: 60px;
+}
+
+#category {
+  position: unset;
+  font-size: 25px;
+}
+
+#systemAndYear {
+  position: unset;
+  font-size: 25px;
+}
+
+#estimate {
+  position: unset;
+  font-size: 25px;
+}
+
+#timerContainer {
+  left: 300px;
+  top: 576px;
+  width: 484px;
+  height: 119px;
+  font-size: 40px;
+}
+  
+

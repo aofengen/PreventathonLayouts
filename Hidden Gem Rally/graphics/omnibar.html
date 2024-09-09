@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/omnibar.css">
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js" integrity="sha512-vLs5rAqfvmv/IpN7JustROkGAvjK/L+vgVDFe7KpdtLztqF8mZDfleK2MZj/xuOrWjma0pW+lPCMcBbPKJVC7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+    <script
+		  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous">
+    </script>
+    <script src="js/omnibar.js" defer></script>
+    <script src="js/donationCounter.js" defer></script>
+  </head>
+  <!-- TODO - update to remove SOS Layouts stuff -->
+  <body>
+    <img id="background" src="backgrounds/omnibar.png"></img>
+    <img class="leftlogo" src="eventLogo/regular.png"></img>
+    <img class="leftlogo" style="display:none;" src="eventLogo/glitched.png"></img>
+    <div id="intro0" class="omnibarContainer">
+      <span class="text" style="padding-right: 15px;">You are watching</span>
+      <span class="text" style="color:FireBrick;">Save Our Shelter</span>
+    </div>
+    <div id="intro1" class="omnibarContainer">
+      <span class="text" style="padding-right: 15px;">benefitting</span>
+      <span class="text" style="color:GoldenRod;">GO Rescue Pet Adoption Center</span>
+      <span class="text">,</span>
+    </div>
+    <div id="intro2" class="omnibarContainer">
+      <span class="text" style="padding-right: 15px;">a</span>
+      <span class="text" style="color:GoldenRod;">no-kill shelter</span>
+      <span class="text" style="padding-left: 15px;">in Norfolk, VA</span>
+    </div>
+    <div id="donate" class="omnibarContainer">
+      <span class="text" style="padding-right: 15px;">Donate at</span>
+      <span class="text" style="color:LightBlue;">donate.noglitchesallowed.org</span>
+    </div>
+    <div id="schedule" class="omnibarContainer">
+      <span class="text" style="padding-right: 15px;">Schedule:</span>
+      <span class="text" style="color:LightBlue;">horaro.org/noga/saveourshelter</span>
+    </div>
+    <div id="hostContainer" class="omnibarContainer">
+      <span class="text" style="padding-right: 15px;">Currently hosting:</span>
+      <span class="text" style="color:GoldenRod;" id="host"></span>
+      <span class="text pronouns" id="hostPronouns"></span>
+    </div>
+    <div id="commentaryTopContainer" class="omnibarContainer">
+      <span class="text">Commentary by:</span>
+      <span class="commentatorContainer" id="comm0Container">
+        <span class="text" style="color:GoldenRod;" id="comm0"></span>
+        <span class="text pronouns" id="comm0Pronouns"></span>
+      </span>
+      <span class="commentatorContainer" id="comm1Container">
+        <span class="text" style="color:GoldenRod;" id="comm1"></span>
+        <span class="text pronouns" id="comm1Pronouns"></span>
+      </span>
+    </div>
+    <div id="challenge" class="omnibarContainer">
+      <span class="text" id="challengeText" style="font-size: 65px;"></span>
+      <span id="incentiveBottomContainer">
+        <span class="text" id="challengeRaised"></span>
+        <progress id="challengeProgress" value="0.5"></progress>
+        <span class="text" id="challengeNeeded"></span>
+      </span>
+    </div>
+    <div id="poll" class="omnibarContainer">
+      <span class="text" id="pollText" style="font-size: 65px;"></span>
+      <span id="incentiveBottomContainer">
+        <span class="text pollChoice" id="pollChoice0" style="color: rgba(75, 192, 192, 1);"></span>
+        <span class="text pollChoice" id="pollChoice1" style="color: rgba(255, 99, 132, 1);"></span>
+        <span class="text pollChoice" id="pollChoice2" style="color: rgba(54, 162, 235, 1);"></span>
+        <span class="text pollChoice" id="pollChoice3" style="color: rgba(200, 152, 255, 1);"></span>
+        <span class="text pollChoice" id="pollChoice4" style="color: rgba(255, 159, 64, 1);"></span>
+        <span class="text pollChoice" id="pollChoice5" style="color: rgba(255, 206, 86, 1);"></span>
+      </span>
+    </div>
+    <span class="text" id="donationTotal"></span>
+  </body>
+</html>

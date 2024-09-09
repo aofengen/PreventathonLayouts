@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Rancho-Regular;
+    src: url(../fonts/Rancho-Regular.ttf);
+  }
+  
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.scheduleText {
+    color: black;
+    
+}
+
+.eventInfo {
+    color: white;
+    font-family: Rancho-Regular;
+}
+
+#header {
+    font-size: 33px;
+}
+
+#eventTitle {
+    position: absolute;
+    left: 5px;
+    top: -30px;
+}
+
+#comingGames {
+    font-size: 50px;   
+}
+
+#content {
+    position: absolute;
+    left: 540px;
+    top: -10px;
+}
+
+.title {
+    font-family: Rancho-Regular;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.info {
+    font-family: OpenSans-Regular;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.host {
+    position: absolute;
+    font-weight: bold;
+    left: 5px;
+    top: 630px;
+}
+
+.comms0name, .comms0pronouns {
+    font-size: 30px;
+}
+
+.music {
+    position: absolute;
+    text-align: right;
+    font-weight: bold;
+    right: 5px;
+    top: 600px;
+    width: 900px;
+    height: 100px;
+}
+
+.ocremix {
+    width: 150px;
+}
+
+#songTitle, #songArtists {
+    font-size: 40px;
+}

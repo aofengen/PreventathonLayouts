@@ -1,0 +1,82 @@
+#nameplate0 {
+  left: -120px;
+  top: 400px;
+  width: 642px;
+}
+
+#hostname {
+  position: absolute;
+  left: 205px;
+  top: 463px;
+  width: 404px;
+  font-size: 28px;
+}
+
+#hostpronouns {
+  position: absolute;
+  left: 50px;
+  top: 463px;
+}
+
+#runInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 322px;
+  height: 78px;
+}
+
+#gameName {
+  text-wrap: wrap;
+  left: 5px;
+  width: 322px;
+  height: 50px;
+}
+
+#runInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 322px;
+  height: 35px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  left: 5px;
+  width: 322px;
+  height: 50px;
+  font-size: 40px;
+}
+
+#category {
+  font-size: 20px;
+}
+
+#systemAndYear {
+  max-width: 33%;
+  font-size: 20px;
+}
+
+#estimate {
+  max-width: 33%;
+  font-size: 20px;
+}
+
+#timerContainer {
+  left: -150px;
+  top: 292px;
+  width: 642px;
+  height: 160px;
+  font-size: 35px;
+}
+  
+

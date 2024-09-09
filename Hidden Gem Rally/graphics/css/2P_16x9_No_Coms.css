@@ -1,0 +1,111 @@
+#cameraFill0 {
+  left: 11px;
+  top: 372px;
+}
+
+#cameraFill1 {
+  left: 1016px;
+  top: 372px;
+}
+
+#nameplate0 {
+  left: 258px;
+  top: 360px;
+  width: 300px;
+}
+
+#runner0pro {
+  position: absolute;
+  left: 240px;
+}
+
+#nameplate1 {
+  right: 365px;
+  top: 360px;
+  width: 270px;
+}
+
+#runner1pro {
+  position: absolute;
+  right: -82px;
+}
+
+#hostname {
+  position: fixed;
+  left: 290px;
+  top: 433px;
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+}
+
+#hostpronouns {
+  position: fixed;
+  left: 430px;
+  top: 438px;
+  width: 80px;
+  height: 25px;
+  font-size: 25px;
+}
+
+#runInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: 357px;
+  top: 473px;
+  width: 548px;
+  height: 78px;
+}
+
+#gameName {
+  text-wrap: wrap;
+  width: 548px;
+  height: 45px;
+}
+
+#runInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 548px;
+  height: 33px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  width: 548px;
+  height: 45px;
+  font-size: 40px;
+}
+
+#category {
+  max-width: 33%;
+  font-size: 20px;
+}
+
+#systemAndYear {
+  max-width: 33%;
+  font-size: 20px;
+}
+
+#estimate {
+  max-width: 33%;
+  font-size: 20px;
+}
+
+#timerContainer {
+  left: 530px;
+  top: 580px;
+  width: 210px;
+  height: 65px;
+  font-size: 36px;
+}
+  
+

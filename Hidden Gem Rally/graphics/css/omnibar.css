@@ -1,0 +1,97 @@
+#donationTotal {
+  position: fixed;
+  left: 1533px;
+  top: 3px;
+  font-size: 136px;
+}
+
+.text {
+  font-size: 108px;
+}
+
+.pronouns {
+  margin-left: 20px;
+  font-size: 40px !important;
+  -webkit-text-stroke-width: 1px;
+  background-color: #5A5A96;
+  padding: 2px 4px 2px 4px;
+  border: 3px solid black;
+  color: white;
+}
+
+.omnibarContainer {
+  position: fixed;
+  left: 237px;
+  top: 7px;
+  width: 1257px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentatorContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#commentaryTopContainer > span {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 75px;
+}
+
+#commentaryTopContainer > span > .text {
+  font-size: 75px;
+}
+
+#incentiveBottomContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#challenge {
+  flex-direction: column;
+}
+
+#challengeProgress {
+  width: 900px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  filter: hue-rotate(-90deg);
+}
+
+#challengeRaised, #challengeNeeded {
+  -webkit-text-stroke-width: 1px;
+  font-size: 40px;
+}
+
+#poll {
+  flex-direction: column;
+}
+
+.pollChoice {
+  -webkit-text-stroke-width: 1px;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.omnibarContainer > .text {
+  margin-top: 4px;
+}
+
+.leftlogo {
+  position: fixed;
+  top: 7px;
+  left: 0px;
+}

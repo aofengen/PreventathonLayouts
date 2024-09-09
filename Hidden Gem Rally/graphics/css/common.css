@@ -1,0 +1,35 @@
+#background {
+  z-index: -10;
+}
+
+@font-face {
+  font-family: TT_BLUESCREENS_DEMIBOLD;
+  src: url(../fonts/TT_BLUESCREENS_DEMIBOLD.ttf);
+}
+
+@font-face {
+  font-family: DSEG7Modern-BoldItalic;
+  src: url(../fonts/DSEG7Modern-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Rancho-Regular;
+  src: url(../fonts/Rancho-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body, #background {
+  font-family: Rancho-Regular;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.text {
+  color: black;
+  font-family: Rancho-Regular;  
+}
