@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Rancho-Regular;
+    src: url(../fonts/Rancho-Regular.ttf);
+  }
+  
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+.scheduleText {
+    color: white;
+    
+}
+
+.eventInfo, .musicInfo {
+    color: white;
+    font-family: Rancho-Regular;
+}
+
+.logoRoll {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 45px;
+    top: 100px;
+    border: solid 2px white;
+}
+
+#header {
+    color: white;
+    font-size: 33px;
+}
+
+.clock {
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#eventTitle {
+    position: absolute;
+    left: 5px;
+    top: -30px;
+}
+
+#comingGames {
+    color: white;
+    font-size: 50px;   
+}
+
+#content {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+#incentives {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    bottom: 5px;
+    left: 5px;
+    border: solid 3px white;
+}
+
+.title {
+    font-family: Rancho-Regular;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.info {
+    font-family: OpenSans-Regular;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#host {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    position: absolute;
+    font-weight: bold;
+    left: 5px;
+    top: 415px;
+    width: 180px;
+    height: 40px;
+}
+
+.hostBlock, .comms0name, .comms0pronouns {
+    max-width: 33%;
+    font-size: 20px;
+}
+
+#music {
+    position: absolute;
+    text-align: right;
+    font-weight: bold;
+    right: 5px;
+    top: 590px;
+    width: 600px;
+    height: 250px;
+}
+
+#ocremix {
+    position: absolute;
+    right: 5px;
+    width: 250px;
+}
+
+#songTitle, #songArtists {
+    font-size: 40px;
+}
