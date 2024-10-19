@@ -6,14 +6,13 @@ nodecg.Replicant('nowPlaying').on('change', (song) => {
 });
 
 nodecg.Replicant('commentary').on('change', (value) => {
-  $('#host').text(value.host.name);
-  let pronounElement = $('#hostPronouns');
+  let pronouns;
   if (value.host.pronouns) {
-    pronounElement.text(value.host.pronouns);
-    pronounElement.show();
+    pronouns = `(${value.host.pronouns})`;
   } else {
-    pronounElement.hide();
+    pronouns = "";
   }
+  $('.hostBlock').text(`HOST: ${value.host.name} ${pronouns}`);
 });
 
 async function initSchedule() {

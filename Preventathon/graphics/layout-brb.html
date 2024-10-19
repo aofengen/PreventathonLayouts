@@ -12,12 +12,16 @@
     <script src="js/next-run-info.js"></script>
     <script src="js/brb-host-info.js"></script>
     <script src="js/brb.js"></script>
+    <!-- <script src="js/bids.js"></script> -->
+    <script src="js/donationCounter.js"></script>
+    <script src="js/clock.js"></script>
     
 </head>
 
 <body><div id="background"><div id="layout-brb">
-    <div id="header">
-        <h1 class="eventInfo" id="eventTitle">PREVENT-A-THON 4</h1>
+    <div class="eventInfo" id="header">
+        <h1 id="eventTitle">PREVENT-A-THON 4</h1>
+        <div id="eventTotal">Total Raised:</div>
         <div class="clock" id="clock">Current Time</div>
     </div>
     <div class="logoRoll" id="logoRoll"></div>
@@ -26,25 +30,31 @@
             <div class="comingup">
                 <div id="gameContainer">
                     <h1 id="comingGames">COMING UP...</h1>
-                    <div class="title">game0</div>
-                    <div class="category info"></div>
-                    <div class="runnername info"></div>
-                    <div class="runner2name info"></div>
-                    <div class="estimate info">EST: 00:00:00</div>
+                    <div class="nextGame">
+                        <div class="title">game0</div>
+                        <div class="category info"></div>
+                        <div class="runnername info"></div>
+                        <div class="runner2name info"></div>
+                        <div class="estimate info">EST: 00:00:00</div>
+                    </div>
                     <div style="color: white;">_________________________________</div>
                     
-                    <div class="next1title title">game0</div>
-                    <div class="next1category info"></div>
-                    <div class="next1runnername info"></div>
-                    <div class="next1runner2name info"></div>
-                    <div class="next1estimate info">EST: 00:00:00</div>
+                    <div class="upcomingGames">
+                        <div class="next1title title">game0</div>
+                        <div class="next1category info"></div>
+                        <div class="next1runnername info"></div>
+                        <div class="next1runner2name info"></div>
+                        <div class="next1estimate info">EST: 00:00:00</div>
+                    </div>
                     <div style="color: white;">_________________________________</div>
                     
-                    <div class="next2title title">game0</div>
-                    <div class="next2category info"></div>
-                    <div class="next2runnername info"></div>
-                    <div class="next2runner2name info"></div>
-                    <div class="next2estimate info">EST: 00:00:00</div>
+                    <div class="upcomingGames">
+                        <div class="next2title title">game0</div>
+                        <div class="next2category info"></div>
+                        <div class="next2runnername info"></div>
+                        <div class="next2runner2name info"></div>
+                        <div class="next2estimate info">EST: 00:00:00</div>
+                    </div>
                 </div>
             </div>
         </div>

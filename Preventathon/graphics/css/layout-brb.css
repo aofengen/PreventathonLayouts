@@ -69,11 +69,30 @@ body {
     border: solid 3px white;
 }
 
+#incentiveBox {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    color: white;
+}
+
 .title {
     font-family: Rancho-Regular;
-    color: white;
+    color: yellow;
     font-weight: bold;
     font-size: 30px;
+}
+
+.nextGame {
+    flex: auto;
+    border: solid 1px white;
+    background-color: blue;
+    justify-content: center;
+}
+
+.upcomingGames {
+    border: solid 1px white;
+    background-color: blue;
 }
 
 .info {
@@ -120,4 +139,15 @@ body {
 
 #songTitle, #songArtists {
     font-size: 40px;
+}
+
+#clock {
+    right: 5px;
+}
+
+#eventTotal {
+    position: absolute;
+    font-size: 40px;
+    left: 500px;
+    top: 25px;
 }

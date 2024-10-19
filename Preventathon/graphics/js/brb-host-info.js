@@ -1,10 +1,10 @@
 'use strict';
 $(() => {
 	// The bundle name where all the run information is pulled from.
-	var speedcontrolBundle = 'nodecg-speedcontrol';
+	let speedcontrolBundle = 'nodecg-speedcontrol';
     
-    var comms0name     = $('.comms0name');
-    var comms0pronouns = $('.comms0pronouns');
+    let comms0name     = $('.comms0name');
+    let comms0pronouns = $('.comms0pronouns');
     
     const comms0NameRep     = nodecg.Replicant('comm0Names');
     const comms0PronounsRep = nodecg.Replicant('comm0Pronouns');
