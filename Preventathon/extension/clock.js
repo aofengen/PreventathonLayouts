@@ -1,5 +1,5 @@
 module.exports = (nodecg) => {
-    nodecg.log.info('successful require');
+    nodecg.log.info('successful require of clock.js');
     const currentTime = nodecg.Replicant('currentTime');
     setInterval(() => {
         const options = {

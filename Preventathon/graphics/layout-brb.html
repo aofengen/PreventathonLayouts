@@ -12,16 +12,21 @@
     <script src="js/next-run-info.js"></script>
     <script src="js/brb-host-info.js"></script>
     <script src="js/brb.js"></script>
-    <!-- <script src="js/bids.js"></script> -->
     <script src="js/donationCounter.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/bids.js"></script>
     
 </head>
 
 <body><div id="background"><div id="layout-brb">
     <div class="eventInfo" id="header">
-        <h1 id="eventTitle">PREVENT-A-THON 4</h1>
+        <div id="eventTitle">PREVENT-A-THON 4</div>
         <div id="eventTotal">Total Raised:</div>
+        <div class="eventInfo" id="host">
+            <div class="hostblock">HOST</div>
+            <div class="comms0name eventInfo">thisisalongusername</div>
+            <div class="comms0pronouns eventInfo">these/are/long/pronouns</div>
+        </div>
         <div class="clock" id="clock">Current Time</div>
     </div>
     <div class="logoRoll" id="logoRoll"></div>
@@ -29,51 +34,52 @@
         <div id="column2">
             <div class="comingup">
                 <div id="gameContainer">
-                    <h1 id="comingGames">COMING UP...</h1>
+                    <div class="eventInfo" id="comingGames">COMING UP...</div>
                     <div class="nextGame">
                         <div class="title">game0</div>
                         <div class="category info"></div>
                         <div class="runnername info"></div>
-                        <div class="runner2name info"></div>
+                        <!-- <div class="runner2name info"></div>
+                        <div class="runner3name info"></div>
+                        <div class="runner4name info"></div> -->
                         <div class="estimate info">EST: 00:00:00</div>
                     </div>
-                    <div style="color: white;">_________________________________</div>
                     
                     <div class="upcomingGames">
                         <div class="next1title title">game0</div>
                         <div class="next1category info"></div>
                         <div class="next1runnername info"></div>
-                        <div class="next1runner2name info"></div>
+                        <!-- <div class="next1runner2name info"></div>
+                        <div class="next1runner3name info"></div>
+                        <div class="next1runner4name info"></div> -->
                         <div class="next1estimate info">EST: 00:00:00</div>
                     </div>
-                    <div style="color: white;">_________________________________</div>
                     
                     <div class="upcomingGames">
                         <div class="next2title title">game0</div>
                         <div class="next2category info"></div>
                         <div class="next2runnername info"></div>
-                        <div class="next2runner2name info"></div>
+                        <!-- <div class="next2runner2name info"></div>
+                        <div class="next2runner3name info"></div>
+                        <div class="next2runner4name info"></div> -->
                         <div class="next2estimate info">EST: 00:00:00</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="eventInfo" id="host">
-        <div class="hostblock">HOST</div>
-        <div class="comms0name eventInfo">thisisalongusername</div>
-        <div class="comms0pronouns eventInfo">these/are/long/pronouns</div>
-        </div>
-    </div>
     <div class="incentives" id="incentives">
-        <div id="incentiveBox">Incentives go here</div>
+        <div id="incentiveBox">
+            <div id="incentiveName"></div>
+            <div id="incentiveTotal"></div>
+            <!-- <div id="incentiveProgress"></div> -->
+        </div>
     </div>
     <div class="eventInfo" id="music">
         <div class="musicInfo">
             <div class="eventInfo" id="songTitle"></div>
             <div class="eventInfo" id="songArtists"></div>
-            <div class="hostblock eventInfo" id="ocremix">OCReMiX via RAINWAVE.CC</div>
+            <div class="eventInfo" id="ocremix">OCReMiX via RAINWAVE.CC</div>
         </div>
     </div>
     

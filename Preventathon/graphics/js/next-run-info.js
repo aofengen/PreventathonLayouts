@@ -48,7 +48,9 @@ function refreshNextRunsData(currentRun) {
     let upNextCategoryElement = $('.category');
     let upNextEstimateElement = $('.estimate');
     let upNextRunnerElement = $('.runnername');
-    let upNextRunner2Element = $('.runner2name');
+    // let upNextRunner2Element = $('.runner2name');
+    // let upNextRunner3Element = $('.runner3name');
+    // let upNextRunner4Element = $('.runner4name');
     if(typeof currentRun.game !== 'undefined') {
         upNextGameElement.html(currentRun.game);
     } else {
@@ -65,15 +67,29 @@ function refreshNextRunsData(currentRun) {
         upNextEstimateElement.html("");
     }
     if(typeof currentRun.teams[0] !== 'undefined') {
+        if(typeof currentRun.teams[1] !== 'undefined') {
+            upNextRunnerElement.html(`${currentRun.teams[0].players[0].name}, ${currentRun.teams[1].players[0].name}, ${currentRun.teams[2].players[0].name}, ${currentRun.teams[3].players[0].name}`);
+        }else{
         upNextRunnerElement.html(currentRun.teams[0].players[0].name);
+        }
     } else {
         upNextRunnerElement.html("");
     }
-    if(typeof currentRun.teams[1] !== 'undefined') {
-        upNextRunner2Element.html(currentRun.teams[1].players[0].name);
-    } else {
-        upNextRunner2Element.html("");
-    }
+    // if(typeof currentRun.teams[1] !== 'undefined') {
+    //     upNextRunner2Element.html(currentRun.teams[1].players[0].name);
+    // } else {
+    //     upNextRunner2Element.html("");
+    // }
+    // if(typeof currentRun.teams[2] !== 'undefined') {
+    //     upNextRunner3Element.html(currentRun.teams[2].players[0].name);
+    // } else {
+    //     upNextRunner3Element.html("");
+    // }
+    // if(typeof currentRun.teams[3] !== 'undefined') {
+    //     upNextRunner4Element.html(currentRun.teams[3].players[0].name);
+    // } else {
+    //     upNextRunner4Element.html("");
+    // }
 
 	let i = 0;
 	for (let run of nextRuns) {
@@ -84,7 +100,9 @@ function refreshNextRunsData(currentRun) {
         let onDeckCategoryElement = $('.next' + (i + 1) + 'category');
         let onDeckEstimateElement = $('.next' + (i + 1) + 'estimate');
         let onDeckRunnerElement = $('.next' + (i + 1) + 'runnername');
-        let onDeckRunner2Element = $('.next' + (i + 1) + 'runner2name');
+        // let onDeckRunner2Element = $('.next' + (i + 1) + 'runner2name');
+        // let onDeckRunner3Element = $('.next' + (i + 1) + 'runner3name');
+        // let onDeckRunner4Element = $('.next' + (i + 1) + 'runner4name');
         if(typeof run.game !== 'undefined') {
             onDeckGameElement.html(run.game);
         } else {
@@ -101,15 +119,29 @@ function refreshNextRunsData(currentRun) {
             onDeckEstimateElement.html("");
         }
         if(typeof run.teams[0] !== 'undefined') {
-            onDeckRunnerElement.html(run.teams[0].players[0].name);
+            if(typeof run.teams[1] !== 'undefined') {
+                onDeckRunnerElement.html(`${run.teams[0].players[0].name}, ${run.teams[1].players[0].name}, ${run.teams[2].players[0].name}, ${run.teams[3].players[0].name}`);
+            }else{
+                onDeckRunnerElement.html(run.teams[0].players[0].name);
+            }
         } else {
             onDeckRunnerElement.html("");
         }
-        if(typeof run.teams[1] !== 'undefined') {
-            onDeckRunner2Element.html(run.teams[1].players[0].name);
-        } else {
-            onDeckRunner2Element.html("");
-        }
+        // if(typeof run.teams[1] !== 'undefined') {
+        //     onDeckRunner2Element.html(run.teams[1].players[0].name);
+        // } else {
+        //     onDeckRunner2Element.html("");
+        // }
+        // if(typeof run.teams[2] !== 'undefined') {
+        //     onDeckRunner3Element.html(run.teams[2].players[0].name);
+        // } else {
+        //     onDeckRunner3Element.html("");
+        // }
+        // if(typeof run.teams[3] !== 'undefined') {
+        //     onDeckRunner4Element.html(run.teams[3].players[0].name);
+        // } else {
+        //     onDeckRunner4Element.html("");
+        // }
         
         i++;
     }

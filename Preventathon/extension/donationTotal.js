@@ -1,7 +1,7 @@
 const https = require('https');
 
 module.exports = (nodecg) => {
-  nodecg.log.info('successful require');
+  nodecg.log.info('successful require or donationTotal.js');
   const donationTotal = nodecg.Replicant('donationTotal');
   setInterval(() => {
     let url = 'https://tracker.preventathon.com/tracker/event/4?json';
