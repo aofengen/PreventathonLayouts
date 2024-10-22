@@ -132,17 +132,35 @@ body {
     text-align: center;
 }
 
-.progress {
+/* .progress {
     padding: 6px;
     background: black;
     border-radius: 6px;
-}
+} */
 
 .progress-bar {
     height: 18px;
-    background-color: #ffd700;
+    background-color: #000;
     border-radius: 4px;
     width: 100%
+}
+
+progress::-webkit-progress-bar {
+	height:15px;
+	width:580px;
+	margin:0 auto;
+	background-color: #ffd700;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+
+progress::-webkit-progress-value {
+	float: left;
+	height:11px;
+	margin:0px -10px 0 0;
+	background: #00C1C9;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #666 inset
 }
 
 .title {

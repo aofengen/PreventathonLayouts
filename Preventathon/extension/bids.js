@@ -33,7 +33,8 @@ module.exports = (nodecg) => {
               milestoneArray.push(json.results[i]);
             }
             // nodecg.log.info(`total number of milestones = ${milestoneCountString}`);
-            milestones.value = milestoneArray;
+            milestones.value  = milestoneArray;
+            milestones.length = milestoneArray.length;
           }
         } catch (error) {
           console.error(error.message);

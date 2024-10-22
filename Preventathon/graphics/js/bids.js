@@ -23,9 +23,37 @@ $(() => {
     const totalRep         = nodecg.Replicant('donationTotal')
     
     milestoneRep.on('change', (newVal) => {
-        milestoneName = newVal.name;
-        milestoneTotal = `$${totalRep.value} / $${Math.round(newVal.amount)}`;
-        milestoneProgress = Math.round((totalRep.value/newVal.amount) * 100);
+        let activeMilestone = false;
+        console.log(newVal);
+        console.log(newVal.length)
+        if (newVal != null) {
+            console.log(newVal.length);
+            if (newVal.length == undefined) {
+                if (newVal.amount > totalRep.value) {
+                    activeMilestone = true;
+                    milestoneName = newVal.name;
+                    milestoneTotal = `$${totalRep.value} / $${Math.round(newVal.amount)}`;
+                    milestoneProgress = Math.round((totalRep.value/newVal.amount) * 100);
+                }
+            } else {
+                for (let i = 0; i < newVal.length; i++) {
+                    if (newVal[i].amount > totalRep.value) {
+                        activeMilestone = true;
+                        milestoneName = newVal[i].name;
+                        milestoneTotal = `$${totalRep.value} / $${Math.round(newVal[i].amount)}`;
+                        milestoneProgress = Math.round((totalRep.value/newVal[i].amount) * 100);
+                        break;
+                    }
+                }
+            }
+        } 
+
+        if (!activeMilestone) {
+            milestoneName = "No Active Milestones!"
+            milestoneTotal = "";
+            milestoneProgress = 0;
+        } 
+
     });
 
     incentiveRep.on('change', (newVal) => {
@@ -48,15 +76,14 @@ $(() => {
     });
 
     childRep.on('change', (newVal) => {
-        let children = newVal;
+        let children = Array.from(newVal);
 
-        for (let i = newVal.length - 1; i > 0; i--) {
+        for (let i = children.length - 1; i > 0; i--) {
             if (children[i].parent != randomBidWarId) {
                 children.pop(i);
             }
         }
-    
-        //children.sort(function(a,b){return b.total - a.total});
+        children.sort(function(a,b){return b.total - a.total});
 
         $('#option1').text("");
         $('#option2').text("");
@@ -84,8 +111,10 @@ $(() => {
 
             bidName.removeAttr('style');
             bidTotal.removeAttr('style');
-            bidProgress.removeAttr('style');
-            attribution.removeAttr('style');
+            if (milestoneName != "No Active Milestones!") {
+                bidProgress.removeAttr('style');
+                attribution.removeAttr('style');
+            }
             bidOptions.css('display', 'none');
 
             bidName.text(milestoneName);
