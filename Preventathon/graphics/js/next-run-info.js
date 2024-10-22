@@ -42,7 +42,7 @@ function loadFromSpeedControl() {
 
 function refreshNextRunsData(currentRun) {
 	let nextRuns = getNextRuns(currentRun, 2);
-    console.log(nextRuns);
+    //console.log(nextRuns);
 
     let upNextGameElement = $('.title');
     let upNextCategoryElement = $('.category');

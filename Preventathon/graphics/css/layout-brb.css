@@ -19,7 +19,6 @@ body {
 
 .scheduleText {
     color: white;
-    
 }
 
 .eventInfo, .musicInfo {
@@ -108,13 +107,50 @@ body {
     color: white;
 }
 
+#incentiveName {
+    text-align: center;
+    font-size: 30px;
+}
+
+#incentiveTotal {
+    text-align: center;
+    font-size: 30px;
+}
+
+.options {
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+
+/* Progress bar code from Eva Wythien:
+   https://codepen.io/evawythien/pen/xxXyePG
+*/
+
+.container {
+    margin: 100px auto;
+    width: 600px;
+    text-align: center;
+}
+
+.progress {
+    padding: 6px;
+    background: black;
+    border-radius: 6px;
+}
+
+.progress-bar {
+    height: 18px;
+    background-color: #ffd700;
+    border-radius: 4px;
+    width: 100%
+}
+
 .title {
     font-family: Exo2;
-    color: #ffd700;
+    color: black;
     font-weight: bold;
     font-size: 28px;
     text-align: center;
-    text-shadow: 2px 2px 4px black;
 }
 
 .nextGame {
