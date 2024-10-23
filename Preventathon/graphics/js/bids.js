@@ -29,7 +29,7 @@ $(() => {
                 if (newVal.amount > totalRep.value) {
                     activeMilestone = true;
                     milestoneName = newVal.name;
-                    milestoneTotal = `$${totalRep.value} / $${Math.round(newVal.amount)}`;
+                    milestoneTotal = `$${totalRep.value} / $${Math.round(newVal.amount)} CAD`;
                     milestoneProgress = Math.round((totalRep.value/newVal.amount) * 100);
                 }
             } else {
@@ -37,7 +37,7 @@ $(() => {
                     if (newVal[i].amount > totalRep.value) {
                         activeMilestone = true;
                         milestoneName = newVal[i].name;
-                        milestoneTotal = `$${totalRep.value} / $${Math.round(newVal[i].amount)}`;
+                        milestoneTotal = `$${totalRep.value} / $${Math.round(newVal[i].amount)} CAD`;
                         milestoneProgress = Math.round((totalRep.value/newVal[i].amount) * 100);
                         break;
                     }
@@ -54,13 +54,12 @@ $(() => {
     });
 
     incentiveRep.on('change', (newVal) => {
-        console.log(newVal)
         if (newVal.length > 0) {
             let random = randomNumber(newVal.length);
             let randomIncentive = newVal[random];
        
             incentiveName = randomIncentive.name;
-            incentiveTotal = `$${randomIncentive.total} / $${randomIncentive.goal}`;
+            incentiveTotal = `$${randomIncentive.total} / $${randomIncentive.goal} CAD`;
             incentiveProgress = Math.round((randomIncentive.total/randomIncentive.goal) * 100);
         } else {
             incentiveName = "No Active Incentives!"
@@ -70,39 +69,47 @@ $(() => {
     });
 
     parentRep.on('change', (newVal) => {
-        let random = randomNumber(newVal.length);
-        let randomBidWar = newVal[random];
-        randomBidWarId = randomBidWar.id;
-        
-        bidWarName = randomBidWar.name;
+        if (newVal.length > 0) {
+            let random = randomNumber(newVal.length);
+            let randomBidWar = newVal[random];
+            randomBidWarId = randomBidWar.id;
+            
+            bidWarName = randomBidWar.name;
+        } else {
+            bidWarName = "No Active Bidwars!";
+        }
     });
 
     childRep.on('change', (newVal) => {
-        let children = Array.from(newVal);
+        if (bidWarName == "No Active Bidwars!") {
+            //do nothing
+        } else {
+            let children = Array.from(newVal);
 
-        for (let i = children.length - 1; i > 0; i--) {
-            if (children[i].parent != randomBidWarId) {
-                children.pop(i);
-            }
-        }
-        children.sort(function(a,b){return b.total - a.total});
-
-        $('#option1').text("");
-        $('#option2').text("");
-        $('#option3').text("");
-        $('#otherOptions').text("");
-
-        for (let i = 0; i < 4; i++) {
-            if (i == 3 || i == newVal.length) {
-                if (children.length - 3 > 0) {
-                    $('#otherOptions').text(`${children.length - 3} more options!`);
-                } else {
-                    $('#otherOptions').text("");
+            for (let i = children.length - 1; i > 0; i--) {
+                if (children[i].parent != randomBidWarId) {
+                    children.pop(i);
                 }
-                break;
             }
-            let option = $(`#option${i+1}`);
-            option.text(`${children[i].name}:  $${children[i].total}`);
+            children.sort(function(a,b){return b.total - a.total});
+
+            $('#option1').text("");
+            $('#option2').text("");
+            $('#option3').text("");
+            $('#otherOptions').text("");
+
+            for (let i = 0; i < 4; i++) {
+                if (i == 3 || i == newVal.length) {
+                    if (children.length - 3 > 0) {
+                        $('#otherOptions').text(`${children.length - 3} more options!`);
+                    } else {
+                        $('#otherOptions').text("");
+                    }
+                    break;
+                }
+                let option = $(`#option${i+1}`);
+                option.text(`${children[i].name}:  $${children[i].total} CAD`);
+            }
         }
     })
 
@@ -147,7 +154,9 @@ $(() => {
                 attribution.css('display', 'none');
 
                 bidName.text(bidWarName);
-                bidOptions.removeAttr('style');
+                if (bidWarName != "No Active Bidwars") {
+                    bidOptions.removeAttr('style');
+                }
             }
         }
     }, 10000);
