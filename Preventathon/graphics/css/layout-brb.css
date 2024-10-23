@@ -32,7 +32,7 @@ body {
     height: 300px;
     left: 5px;
     top: 125px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
 }
 
 #header {
@@ -97,7 +97,7 @@ body {
     height: 250px;
     bottom: 25px;
     left: 5px;
-    border: solid 3px white;
+    /* border: solid 3px white; */
 }
 
 #incentiveBox {
