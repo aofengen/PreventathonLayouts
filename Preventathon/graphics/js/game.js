@@ -51,7 +51,7 @@ const players = run.teams.flatMap((t) => t.players);
   if (run.system) systemAndYear.push(run.system);
   if (run.release) systemAndYear.push(run.release);
   $('#systemAndYear').text(systemAndYear.join(', '));
-  $('#estimate').text(`EST ${run.estimate.substring(1)}`);
+  $('#estimate').text(`EST ${run.estimate}`);
 });
 
 const timer = nodecg.Replicant('timer', 'nodecg-speedcontrol');
@@ -87,6 +87,7 @@ const comms2PronounsRep = nodecg.Replicant('comm2Pronouns');
 const comms3PronounsRep = nodecg.Replicant('comm3Pronouns');
 const hasComm1Rep       = nodecg.Replicant('hasComm1');
 const hasComm2Rep       = nodecg.Replicant('hasComm2');
+const hasComm3Rep       = nodecg.Replicant('hasComm3');
 
 comms0NameRep.on('change', (newVal) => {
     comms0name.text(newVal);
@@ -98,7 +99,7 @@ comms2NameRep.on('change', (newVal) => {
     comms2name.text(newVal);
 });
 comms3NameRep.on('change', (newVal) => {
-  comms2name.text(newVal);
+    comms3name.text(newVal);
 });
 comms0PronounsRep.on('change', (newVal) => {
     comms0pronouns.text(newVal);
@@ -110,7 +111,7 @@ comms2PronounsRep.on('change', (newVal) => {
     comms2pronouns.text(newVal);
 });
 comms3PronounsRep.on('change', (newVal) => {
-  comms3pronouns.text(newVal);
+    comms3pronouns.text(newVal);
 });
 hasComm1Rep.on('change', (newVal) => {
   if(newVal) {
@@ -124,5 +125,12 @@ hasComm2Rep.on('change', (newVal) => {
     $('.comm2Nameplate').show();
   } else {
     $('.comm2Nameplate').hide();
+  }
+});
+hasComm3Rep.on('change', (newVal) => {
+  if(newVal) {
+    $('.comm3Nameplate').show();
+  } else {
+    $('.comm3Nameplate').hide();
   }
 });

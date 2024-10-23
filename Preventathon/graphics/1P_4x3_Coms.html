@@ -14,6 +14,7 @@
 			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			crossorigin="anonymous">
     </script>
+    <script src="js/donationCounter.js"></script>
     <script src="js/game.js" defer></script>
   </head>
   <body>
@@ -31,29 +32,34 @@
     <div class="nameplate" id="nameplate0">
       <div class="twitchNameplate" id="twitchNameplate0">
         <img class="nameplateLogo" src="nameplateLogos/twitchLogo.png"></img>
-        <span class="clearOnReload text twitchText" id="twitch0"></span>
+        <span class="clearOnReload text twitchText whitetext" id="twitch0"></span>
       </div>
       <div class="runnerNameplate" id="runnerNameplate0">
-        <span class="clearOnReload text runnerText" id="runner0"></span>
-        <span class="clearOnReload pronouns pronouns0 text"></span>
+        <span class="clearOnReload text runnerText whitetext" id="runner0"></span>
+        <span class="clearOnReload pronouns pronouns0 text whitetext" id="runnerpro"></span>
       </div>
     </div>
     <div class="commsPlate" id="commsPlate">
       <div class="hostNameplate" id="hostNameplate">
-        <span class="clearOnReload comms0name text" id="hostname"></span>
-        <span class="clearOnReload comms0p pronouns text" id="hostpronouns"></span>
+        <span class="clearOnReload comms0name text whitetext" id="hostname"></span>
+        <span class="clearOnReload comms0p pronouns text whitetext" id="hostpronouns"></span>
       </div>
       <div class="comm1Nameplate" id="comm1Nameplate">
-        <span class="clearOnReload comms1name text" id="comms1name"></span>
-        <span class="clearOnReload comms1p pronouns text" id="comms1pro"></span>
+        <span class="clearOnReload comms1name text whitetext" id="comms1name"></span>
+        <span class="clearOnReload comms1p pronouns text whitetext" id="comms1pro"></span>
       </div>
       <div class="comm2Nameplate" id="comm2Nameplate">
-        <span class="clearOnReload comms2name text" id="comms2name"></span>
-        <span class="clearOnReload comms2p pronouns text" id="comms2pro"></span>
+        <span class="clearOnReload comms2name text whitetext" id="comms2name"></span>
+        <span class="clearOnReload comms2p pronouns text whitetext" id="comms2pro"></span>
+      </div>
+      <div class="comm3Nameplate" id="comm3Nameplate">
+        <span class="clearOnReload comms3name text whitetext" id="comms3name"></span>
+        <span class="clearOnReload comms3p pronouns text whitetext" id="comms3pro"></span>
       </div>
     </div>
     <span id="timerContainer">
-      <span class="text" id="timer"></span>
+      <span class="text whitetext" id="timer"></span>
     </span>
+    <div class="text whitetext" id="eventTotal">Total Raised:</div>
   </body>
 </html>

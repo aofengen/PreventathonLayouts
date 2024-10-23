@@ -24,10 +24,7 @@ $(() => {
     
     milestoneRep.on('change', (newVal) => {
         let activeMilestone = false;
-        console.log(newVal);
-        console.log(newVal.length)
         if (newVal != null) {
-            console.log(newVal.length);
             if (newVal.length == undefined) {
                 if (newVal.amount > totalRep.value) {
                     activeMilestone = true;
@@ -124,6 +121,12 @@ $(() => {
             if (incentive) {
                 bidwar = true;
                 incentive = false;
+
+                bidName.removeAttr('style');
+                bidTotal.removeAttr('style');
+                bidProgress.removeAttr('style');
+                attribution.removeAttr('style');
+                bidOptions.css('display', 'none');
 
                 bidName.text(incentiveName);
                 bidTotal.text(incentiveTotal);
