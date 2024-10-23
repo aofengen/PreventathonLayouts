@@ -7,8 +7,7 @@ module.exports = (nodecg) => {
             month: "numeric",
             day: "numeric",
             hour: "numeric",
-            minute: "numeric",
-            second: "numeric",
+            minute: "numeric"
         }
 
         const time = new Date().toLocaleString('en-US', options);
