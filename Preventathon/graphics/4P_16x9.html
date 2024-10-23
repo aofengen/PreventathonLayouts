@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/4P_16x9.css">
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js" integrity="sha512-vLs5rAqfvmv/IpN7JustROkGAvjK/L+vgVDFe7KpdtLztqF8mZDfleK2MZj/xuOrWjma0pW+lPCMcBbPKJVC7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+    <script
+		  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous">
+    </script>
+    <script src="js/clock.js"></script>
+    <script src="js/donationCounter.js"></script>
+    <script src="js/game.js" defer></script>
+  </head>
+  <body>
+    <img id="background" src="backgrounds/4P_16x9.png"></img>
+    <div class="nameplate" id="nameplate0">
+      <div class="twitchNameplate" id="twitchNameplate0">
+        <img class="nameplateLogo" src="nameplateLogos/twitchLogo.png"></img>
+        <span class="clearOnReload text twitchText" id="twitch0"></span>
+      </div>
+      <div class="runnerNameplate" id="runnerNameplate0">
+        <span class="clearOnReload text runnerText" id="runner0"></span>
+        <span class="clearOnReload pronouns pronouns0 text" id="runner0pro"></span>
+      </div>
+    </div>
+    <div class="nameplate" id="nameplate1">
+      <div class="twitchNameplate" id="twitchNameplate1">
+        <img class="nameplateLogo" src="nameplateLogos/twitchLogo.png"></img>
+        <span class="clearOnReload text twitchText" id="twitch1"></span>
+      </div>
+      <div class="runnerNameplate" id="runnerNameplate1">
+        <span class="clearOnReload text runnerText" id="runner1"></span>
+        <span class="clearOnReload pronouns pronouns1 text" id="runner1pro"></span>
+      </div>
+    </div>
+    <div class="nameplate" id="nameplate2">
+      <div class="twitchNameplate" id="twitchNameplate0">
+        <img class="nameplateLogo" src="nameplateLogos/twitchLogo.png"></img>
+        <span class="clearOnReload text twitchText" id="twitch2"></span>
+      </div>
+      <div class="runnerNameplate" id="runnerNameplate2">
+        <span class="clearOnReload text runnerText" id="runner2"></span>
+        <span class="clearOnReload pronouns pronouns2 text" id="runner2pro"></span>
+      </div>
+    </div>
+    <div class="nameplate" id="nameplate3">
+      <div class="twitchNameplate" id="twitchNameplate3">
+        <img class="nameplateLogo" src="nameplateLogos/twitchLogo.png"></img>
+        <span class="clearOnReload text twitchText" id="twitch3"></span>
+      </div>
+      <div class="runnerNameplate" id="runnerNameplate3">
+        <span class="clearOnReload text runnerText" id="runner3"></span>
+        <span class="clearOnReload pronouns pronouns3 text" id="runner3pro"></span>
+      </div>
+    </div>
+    <div class="commsPlate" id="commsPlate">
+      <div class="hostNameplate" id="hostNameplate">
+        <span class="clearOnReload comms0name text" id="hostname"></span>
+        <span class="clearOnReload comms0p pronouns text" id="hostpronouns"></span>
+      </div>
+    </div>
+    <span id="belowCategoryContainer">
+      <span class="clearOnReload text" id="systemAndYear"></span>
+      <span class="clearOnReload text" id="estimate"></span>
+    </span>
+    <span id="timerContainer">
+      <span class="text" id="timer"></span>
+    </span>
+  </body>
+</html>

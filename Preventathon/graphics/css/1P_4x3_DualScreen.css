@@ -4,6 +4,11 @@
   width: 642px;
 }
 
+
+.whitetext {
+  color: white;
+}
+
 #hostname {
   position: absolute;
   left: 125px;
@@ -126,10 +131,9 @@
   
 #eventTotal {
   position: absolute;
-  width: 450px;
+  width: 350px;
   height: 30px;
-  top: 890px;
-  left: 1225px;
-  text-align: right;
-  font-size: 35px;
+  top: 840px;
+  left: 1205px;
+  font-size: 40px;
 }

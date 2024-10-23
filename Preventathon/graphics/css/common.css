@@ -2,6 +2,11 @@
   z-index: -10;
 }
 
+@font-face{
+  font-family: Exo2;
+  src: url(../fonts/Exo2-VariableFont_wght.ttf)
+}
+
 @font-face {
   font-family: TT_BLUESCREENS_DEMIBOLD;
   src: url(../fonts/TT_BLUESCREENS_DEMIBOLD.ttf);
@@ -32,4 +37,12 @@ body, #background {
 .text {
   color: black;
   font-family: Rancho-Regular;  
+}
+
+.whitetext {
+  color: white;
+}
+
+.exo {
+  font-family: Exo2;
 }

@@ -9,12 +9,7 @@
     },
     "graphics": [
       {
-        "file": "2P_16x9_Coms.html",
-        "width": 1280,
-        "height": 720
-      },
-      {
-        "file": "2P_16x9_No_Coms.html",
+        "file": "4P_16x9.html",
         "width": 1280,
         "height": 720
       },
@@ -35,6 +30,26 @@
       },
       {
         "file": "1P_4x3_No_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_4x3_DualScreen.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_10x9_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_10x9_No_Coms.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "1P_3x2_GBA.html",
         "width": 1280,
         "height": 720
       },

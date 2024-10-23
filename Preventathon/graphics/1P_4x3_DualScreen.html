@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="css/1P_16x9_Coms.css">
+    <link rel="stylesheet" href="css/1P_4x3_Coms.css">
     <script 
       src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js" integrity="sha512-vLs5rAqfvmv/IpN7JustROkGAvjK/L+vgVDFe7KpdtLztqF8mZDfleK2MZj/xuOrWjma0pW+lPCMcBbPKJVC7g=="
       crossorigin="anonymous"
@@ -14,18 +14,30 @@
 			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			crossorigin="anonymous">
     </script>
+    <script src="js/donationCounter.js"></script>
+    <script src="js/clock.js"></script>
     <script src="js/game.js" defer></script>
   </head>
   <body>
-    <img id="background" src="backgrounds/1P_16x9_Coms.png"></img>
+    <img id="background" src="backgrounds/1P_4x3_Coms.png"></img>
+    <div id="runInfoContainer">
+      <div id="gameName">
+        <span class="clearOnReload text" id="game"></span>
+      </div>
+      <div id="runInfo">
+        <span class="clearOnReload text" id="category"></span>
+        <span class="clearOnReload text" id="systemAndYear"></span>
+        <span class="clearOnReload text" id="estimate"></span>
+      </div>
+    </div>
     <div class="nameplate" id="nameplate0">
       <div class="twitchNameplate" id="twitchNameplate0">
         <img class="nameplateLogo" src="nameplateLogos/twitchLogo.png"></img>
-        <span class="clearOnReload text twitchText" id="twitch0"></span>
+        <span class="clearOnReload text twitchText whitetext" id="twitch0"></span>
       </div>
       <div class="runnerNameplate" id="runnerNameplate0">
-        <span class="clearOnReload text runnerText" id="runner0"></span>
-        <span class="clearOnReload pronouns pronouns0 text"></span>
+        <span class="clearOnReload text runnerText whitetext" id="runner0"></span>
+        <span class="clearOnReload pronouns pronouns0 text whitetext" id="runnerpro"></span>
       </div>
     </div>
     <div class="commsPlate" id="commsPlate">
@@ -46,18 +58,9 @@
         <span class="clearOnReload comms3p pronouns text whitetext" id="comms3pro"></span>
       </div>
     </div>
-    <div id="runInfoContainer">
-      <div id="gameName">
-        <span class="clearOnReload text" id="game"></span>
-      </div>
-      <div id="runInfo">
-        <span class="clearOnReload text" id="category"></span>
-        <span class="clearOnReload text" id="systemAndYear"></span>
-        <span class="clearOnReload text" id="estimate"></span>
-      </div>
-    </div>
     <span id="timerContainer">
-      <span class="text" id="timer"></span>
+      <span class="text whitetext" id="timer"></span>
     </span>
+    <div class="text whitetext" id="eventTotal">Total Raised:</div>
   </body>
 </html>

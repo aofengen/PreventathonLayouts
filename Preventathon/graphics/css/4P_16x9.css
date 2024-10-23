@@ -1,0 +1,102 @@
+#cameraFill0 {
+  left: 11px;
+  top: 372px;
+}
+
+#cameraFill1 {
+  left: 1016px;
+  top: 372px;
+}
+
+#nameplate0 {
+  left: 258px;
+  top: 360px;
+  width: 300px;
+}
+
+#runner0pro {
+  position: absolute;
+  left: 240px;
+}
+
+#nameplate1 {
+  right: 365px;
+  top: 360px;
+  width: 270px;
+}
+
+#runner1pro {
+  position: absolute;
+  right: -82px;
+}
+
+#commsPlate {
+  position: fixed;
+  left: 295px;
+  top: 433px;
+  width: 330px;
+}
+
+#hostname {
+  position: fixed;
+  left: 290px;
+  top: 433px;
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+}
+
+#hostpronouns {
+  position: fixed;
+  left: 393px;
+  top: 438px;
+  width: 40px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#comms1name {
+  position: absolute;
+  left: 465px;
+  font-size: 25px;
+}
+
+#comms1pro {
+  position: absolute;
+  top: 6px;
+  height: 20px;
+  right: -363px;
+  font-size: 20px;
+}
+
+#game {
+  left: 363px;
+  top: 476px;
+  width: 250px;
+  height: 60px;
+}
+
+#category {
+  right: 373px;
+  top: 476px;
+  width: 260px;
+  height: 60px;
+}
+
+#belowCategoryContainer {
+  left: 530px;
+  top: 525px;
+  width: 175px;
+  height: 30px;
+  font-size: 30px;
+}
+
+#timerContainer {
+  left: 530px;
+  top: 580px;
+  width: 210px;
+  height: 65px;
+  font-size: 36px;
+}
+  
+
