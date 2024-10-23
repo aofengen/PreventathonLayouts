@@ -1,5 +1,5 @@
 #nameplate0 {
-  left: -70px;
+  left: -25px;
   top: 465px;
   width: 642px;
 }
@@ -126,10 +126,10 @@
   
 #eventTotal {
   position: absolute;
-  width: 450px;
+  width: 650px;
   height: 30px;
   top: 890px;
-  left: 1225px;
+  left: 1025px;
   text-align: right;
   font-size: 35px;
 }

@@ -54,13 +54,18 @@ $(() => {
     });
 
     incentiveRep.on('change', (newVal) => {
-        if (newVal != null) {
+        console.log(newVal)
+        if (newVal.length > 0) {
             let random = randomNumber(newVal.length);
             let randomIncentive = newVal[random];
        
             incentiveName = randomIncentive.name;
             incentiveTotal = `$${randomIncentive.total} / $${randomIncentive.goal}`;
             incentiveProgress = Math.round((randomIncentive.total/randomIncentive.goal) * 100);
+        } else {
+            incentiveName = "No Active Incentives!"
+            incentiveTotal = "";
+            incentiveProgress = 0;
         }
     });
 
@@ -124,8 +129,10 @@ $(() => {
 
                 bidName.removeAttr('style');
                 bidTotal.removeAttr('style');
-                bidProgress.removeAttr('style');
-                attribution.removeAttr('style');
+                if (incentiveName == "No Active Incentives!") {
+                    bidProgress.css('display', 'none');
+                    attribution.css('display', 'none');
+                }
                 bidOptions.css('display', 'none');
 
                 bidName.text(incentiveName);

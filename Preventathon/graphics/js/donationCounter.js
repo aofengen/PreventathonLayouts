@@ -7,6 +7,6 @@ $(() => {
     const totalRep = nodecg.Replicant('donationTotal');
     
     totalRep.on('change', (newVal) => {
-        total.text(`$${newVal} raised for Little Warriors!`);
+        total.text(`$${newVal} CAD raised for Little Warriors!`);
     });
 });
