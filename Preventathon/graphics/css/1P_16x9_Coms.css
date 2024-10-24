@@ -19,14 +19,6 @@
 
 #hostname {
   position: absolute;
-  left: 150px;
-  top: 346px;
-  width: 404px;
-  font-size: 25px;
-}
-
-#hostname {
-  position: absolute;
   left: 80px;
   top: 380px;
   width: 404px;
@@ -165,5 +157,3 @@
   width: 300px;
   font-size: 25px;
 }
-  
-

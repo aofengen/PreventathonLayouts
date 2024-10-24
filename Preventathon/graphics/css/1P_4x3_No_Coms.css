@@ -1,21 +1,35 @@
 #nameplate0 {
-  left: -120px;
-  top: 400px;
+  left: -75px;
+  top: 345px;
   width: 642px;
+}
+
+.twitchText, .runnerText {
+  font-size: 25px;
+}
+
+.nameplateLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.pronouns {
+  font-size: 20px;
 }
 
 #hostname {
   position: absolute;
-  left: 205px;
-  top: 463px;
+  left: 80px;
+  top: 395px;
   width: 404px;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 #hostpronouns {
   position: absolute;
   left: 50px;
-  top: 463px;
+  top: 420px;
+  font-size: 20px;
 }
 
 #runInfoContainer {
@@ -24,26 +38,27 @@
   justify-content: center;
   align-content: center;
   position: absolute;
-  left: 5px;
-  top: 10px;
-  width: 322px;
-  height: 78px;
+  left: 735px;
+  top: 625px;
+  width: 600px;
+  height: 138px;
 }
 
-#gameName {
+/* #gameName {
   text-wrap: wrap;
   left: 5px;
-  width: 322px;
-  height: 50px;
-}
+  width: 589px;
+  height: 80px;
+} */
 
 #runInfo {
   display: flex;
   flex-wrap: wrap;
-  width: 322px;
-  height: 35px;
+  width: 489px;
+  height: 65px;
   align-items: center;
   justify-content: space-evenly;
+  left: 255px;
 }
 
 #game {
@@ -52,31 +67,55 @@
   justify-content: center;
   position: absolute;
   left: 5px;
-  width: 322px;
-  height: 50px;
-  font-size: 40px;
+  top: 5px;
+  width: 575px;
+  height: 40px;
+  font-size: 30px;
 }
 
 #category {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #systemAndYear {
   max-width: 33%;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #estimate {
   max-width: 33%;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #timerContainer {
-  left: -150px;
-  top: 292px;
+  left: -90px;
+  top: 232px;
   width: 642px;
   height: 160px;
   font-size: 35px;
 }
   
+#eventTotal {
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  top: 670px;
+  left: 365px;
+  font-size: 30px;
+  text-align: right;
+}
 
+#eventTitle {
+  position:absolute;
+  width: 300px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#clock {
+  position: absolute;
+  left: 1020px;
+  top: -5px;
+  width: 300px;
+  font-size: 25px;
+}

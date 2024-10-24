@@ -1,35 +1,48 @@
 #nameplate0 {
-  left: -25px;
-  top: 465px;
+  left: -75px;
+  top: 345px;
   width: 642px;
+}
+
+.twitchText, .runnerText {
+  font-size: 25px;
+}
+
+.nameplateLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.pronouns {
+  font-size: 20px;
 }
 
 #hostname {
   position: absolute;
-  left: 125px;
-  top: 535px;
+  left: 80px;
+  top: 395px;
   width: 404px;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 #hostpronouns {
   position: absolute;
-  left: 125px;
-  top: 565px;
-  font-size: 25px;
+  left: 50px;
+  top: 420px;
+  font-size: 20px;
 }
 
 #comms1name {
   position: absolute;
-  left: 125px;
-  top: 620px;
+  left: 80px;
+  top: 450px;
   font-size: 28px;
 }
 
 #comms1pro {
   position: absolute;
-  left: 95px;
-  top: 650px;
+  left: 50px;
+  top: 478px;
   font-size: 23px;
 }
 
@@ -67,26 +80,27 @@
   justify-content: center;
   align-content: center;
   position: absolute;
-  left: 5px;
-  top: 10px;
+  left: 735px;
+  top: 625px;
   width: 600px;
   height: 138px;
 }
 
-#gameName {
+/* #gameName {
   text-wrap: wrap;
   left: 5px;
   width: 589px;
   height: 80px;
-}
+} */
 
 #runInfo {
   display: flex;
   flex-wrap: wrap;
-  width: 589px;
+  width: 489px;
   height: 65px;
   align-items: center;
   justify-content: space-evenly;
+  left: 255px;
 }
 
 #game {
@@ -94,42 +108,56 @@
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  left: 17px;
+  left: 5px;
   top: 5px;
   width: 575px;
-  height: 60px;
-  font-size: 40px;
+  height: 40px;
+  font-size: 30px;
 }
 
 #category {
-  font-size: 30px;
+  font-size: 23px;
 }
 
 #systemAndYear {
   max-width: 33%;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 #estimate {
   max-width: 33%;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 #timerContainer {
-  left: 550px;
-  top: 782px;
+  left: -90px;
+  top: 232px;
   width: 642px;
   height: 160px;
-  font-size: 50px;
-  color: white;
+  font-size: 35px;
 }
   
 #eventTotal {
   position: absolute;
-  width: 650px;
+  width: 450px;
   height: 30px;
-  top: 890px;
-  left: 1025px;
+  top: 670px;
+  left: 365px;
+  font-size: 30px;
   text-align: right;
-  font-size: 35px;
+}
+
+#eventTitle {
+  position:absolute;
+  width: 300px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#clock {
+  position: absolute;
+  left: 1020px;
+  top: -5px;
+  width: 300px;
+  font-size: 25px;
 }
