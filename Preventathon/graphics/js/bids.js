@@ -14,9 +14,10 @@ $(() => {
 
     let milestoneName, milestoneTotal, milestoneProgress;
     let incentiveName, incentiveTotal, incentiveProgress;
-    let bidWarName, option1, option2, option3, randomBidWarId;
+    let bidWarName, randomBidWarId, gameNames, gameName;
     
     const milestoneRep     = nodecg.Replicant('milestones');
+    const gameRep          = nodecg.Replicant('gameNames');
     const incentiveRep     = nodecg.Replicant('incentives');
     const parentRep        = nodecg.Replicant('parentBids');
     const childRep         = nodecg.Replicant('childBids');
@@ -53,12 +54,31 @@ $(() => {
 
     });
 
+    gameRep.on('change', (newVal) => {
+        gameNames = Array.from(newVal);
+    });
+
     incentiveRep.on('change', (newVal) => {
         if (newVal.length > 0) {
-            let random = randomNumber(newVal.length);
-            let randomIncentive = newVal[random];
+            let newIncentives = Array.from(newVal);
+            for (let i = newIncentives.length - 1 ; i >= 0 ; i--) {
+                if (newIncentives[i].state != 'OPENED') {
+                    newIncentives.splice(i, 1);
+                }
+            }
+            let random = randomNumber(newIncentives.length);
+            let randomIncentive = newIncentives[random];
+            for (let i = 0; i < gameNames.length; i++) { 
+                let temp = gameNames[i].split(',');
+                let temp2 = temp[0].split(':');
+                let temp3 = temp[1].split(':');
+                if (temp2[1].trimStart() == randomIncentive.speedrun) {
+                    gameName = temp3[1].trimStart();
+                    break;
+                }
+            }
        
-            incentiveName = randomIncentive.name;
+            incentiveName = `${gameName} - ${randomIncentive.name}`;
             incentiveTotal = `$${randomIncentive.total} / $${randomIncentive.goal} CAD`;
             incentiveProgress = Math.round((randomIncentive.total/randomIncentive.goal) * 100);
         } else {
@@ -70,11 +90,26 @@ $(() => {
 
     parentRep.on('change', (newVal) => {
         if (newVal.length > 0) {
-            let random = randomNumber(newVal.length);
-            let randomBidWar = newVal[random];
+            let newBidWars = Array.from(newVal);
+            for (let i = newBidWars.length - 1 ; i >= 0 ; i--) {
+                if (newBidWars[i].state != 'OPENED') {
+                    newBidWars.splice(i, 1);
+                }
+            }            
+            let random = randomNumber(newBidWars.length);
+            let randomBidWar = newBidWars[random];
             randomBidWarId = randomBidWar.id;
+            for (let i = 0; i < gameNames.length; i++) { 
+                let temp = gameNames[i].split(',');
+                let temp2 = temp[0].split(':');
+                let temp3 = temp[1].split(':');
+                if (temp2[1].trimStart() == randomBidWar.speedrun) {
+                    gameName = temp3[1].trimStart();
+                    break;
+                }
+            }
             
-            bidWarName = randomBidWar.name;
+            bidWarName = `${gameName} - ${randomBidWar.name}`;
         } else {
             bidWarName = "No Active Bidwars!";
         }
@@ -88,7 +123,7 @@ $(() => {
 
             for (let i = children.length - 1; i > 0; i--) {
                 if (children[i].parent != randomBidWarId) {
-                    children.pop(i);
+                    children.splice(i, 1);
                 }
             }
             children.sort(function(a,b){return b.total - a.total});
@@ -139,6 +174,9 @@ $(() => {
                 if (incentiveName == "No Active Incentives!") {
                     bidProgress.css('display', 'none');
                     attribution.css('display', 'none');
+                } else {
+                    bidProgress.removeAttr('style');
+                    attribution.removeAttr('style');
                 }
                 bidOptions.css('display', 'none');
 

@@ -6,6 +6,7 @@ module.exports = (nodecg) => {
   const milestones = nodecg.Replicant('milestones');
   const incentives = nodecg.Replicant('incentives');
   const parentBids = nodecg.Replicant('parentBids');
+  const gameNames   = nodecg.Replicant('gameNames');
   const childBids  = nodecg.Replicant('childBids');
 
   setInterval(() => {
@@ -46,6 +47,36 @@ module.exports = (nodecg) => {
   }, 30000);
 
   setInterval(() => {
+    let url = `https://tracker.preventathon.com/tracker/api/v2/runs/`;
+    let gameName = new Array;
+    let body = "";
+    https.get(url, (res) => {
+      res.on("data", (chunk) => {
+        body += chunk;
+      });
+      res.on("end", () => {
+        try {
+          let json = JSON.parse(body);
+          for (let i = 92; i < json.count; i++) {
+            if (json.results[i].event.id != '4') {
+              continue;
+            } else {
+              if (json.results[i].name != null) {
+                gameName.push(`id: ${json.results[i].id}, name: ${json.results[i].name}`);
+              }
+            }
+          }
+          gameNames.value = gameName;
+        } catch (error) {
+          console.error(error.message);
+        }
+      });
+    }).on("error", (error) => {
+      nodecg.log.error(error.message);
+  });
+  }, 10000);
+
+  setInterval(() => {
     let url = 'https://tracker.preventathon.com/tracker/api/v2/bids/';
     https.get(url,(res) => {
       let body = "";
@@ -81,7 +112,6 @@ module.exports = (nodecg) => {
             childBids.length = childArray.length;
             // nodecg.log.info(`incentives.value.name = ${incentives.value[0].name}, parentBids.value.name = ${parentBids.value[0].name}, childBids.value.name = ${childBids.value[0].name}`);
           }
-          //TODO: handle incentives vs bidwars
         } catch (error) {
           console.error(error.message);
         };
