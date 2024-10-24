@@ -1,6 +1,6 @@
 #nameplate0 {
   left: 0px;
-  top: 278px;
+  top: 318px;
   width: 404px;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .pronouns {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #hostname {
@@ -25,10 +25,19 @@
   font-size: 25px;
 }
 
+#hostname {
+  position: absolute;
+  left: 80px;
+  top: 380px;
+  width: 404px;
+  font-size: 25px;
+}
+
 #hostpronouns {
   position: absolute;
-  left: -10px;
-  top: 348px;
+  left: 50px;
+  top: 410px;
+  font-size: 20px;
 }
 
 #runInfoContainer {
@@ -37,8 +46,8 @@
   justify-content: center;
   align-content: center;
   position: absolute;
-  left: 685px;
-  top: 585px;
+  left: 710px;
+  top: 530px;
   width: 500px;
   height: 95px;
 }
@@ -51,6 +60,7 @@
 #runInfo {
   display: flex;
   flex-wrap: wrap;
+  position: unset;
   width: 500px;
   height: 35px;
   align-items: center;
@@ -60,10 +70,10 @@
 #game {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: unset;
   width: 500px;
-  height: 60px;
-  font-size: 60px;
+  height: 40px;
+  font-size: 40px;
 }
 
 #category {
@@ -72,19 +82,46 @@
 }
 
 #systemAndYear {
+  position: unset;
   font-size: 25px;
 }
 
 #estimate {
+  position: unset;
   font-size: 25px;
 }
 
 #timerContainer {
-  left: 300px;
-  top: 576px;
+  left: 284px;
+  top: 516px;
   width: 484px;
   height: 119px;
   font-size: 40px;
+}
+
+#eventTotal {
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  top: 670px;
+  left: 815px;
+  font-size: 30px;
+  text-align: right;
+}
+
+#eventTitle {
+  position:absolute;
+  width: 300px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#clock {
+  position: absolute;
+  left: 1020px;
+  top: -5px;
+  width: 300px;
+  font-size: 25px;
 }
   
 

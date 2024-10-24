@@ -1,55 +1,54 @@
 #nameplate0 {
-  left: -70px;
-  top: 465px;
+  left: -50px;
+  top: 345px;
   width: 642px;
 }
 
-
-.whitetext {
-  color: white;
+.pronouns0 {
+  font-size: 20px;
 }
 
 #hostname {
   position: absolute;
   left: 125px;
-  top: 535px;
+  top: 400px;
   width: 404px;
   font-size: 28px;
 }
 
 #hostpronouns {
   position: absolute;
-  left: 125px;
-  top: 565px;
-  font-size: 25px;
+  left: 300px;
+  top: 407px;
+  font-size: 20px;
 }
 
 #comms1name {
   position: absolute;
   left: 125px;
-  top: 620px;
+  top: 455px;
   font-size: 28px;
 }
 
 #comms1pro {
   position: absolute;
   left: 95px;
-  top: 650px;
-  font-size: 23px;
+  top: 485px;
+  font-size: 15px;
 }
 
 #comms2name {
   position: absolute;
-  left: 385px;
-  top: 620px;
+  left: 355px;
+  top: 450px;
   font-size: 28px;
 }
 
 #comms2pro {
   position: absolute;
-  left: 355px;
-  top: 650px;
-  font-size: 23px;
+  left: 325px;
+  top: 480px;
+  font-size: 15px;
 }
 
 #comms3name {
@@ -72,24 +71,25 @@
   justify-content: center;
   align-content: center;
   position: absolute;
-  left: 5px;
-  top: 10px;
-  width: 600px;
+  left: 13px;
+  top: 260px;
+  width: 500px;
   height: 138px;
 }
 
-#gameName {
+/* #gameName {
   text-wrap: wrap;
   left: 5px;
   width: 589px;
   height: 80px;
-}
+} */
 
 #runInfo {
   display: flex;
   flex-wrap: wrap;
-  width: 589px;
-  height: 65px;
+  left: 50px;
+  width: 500px;
+  height: 95px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -99,41 +99,56 @@
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  left: 17px;
-  top: 5px;
+  left: -30px;
+  top: 10px;
   width: 575px;
-  height: 60px;
-  font-size: 40px;
+  height: 30px;
+  font-size: 30px;
 }
 
 #category {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #systemAndYear {
   max-width: 33%;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #estimate {
   max-width: 33%;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #timerContainer {
-  left: 550px;
-  top: 782px;
+  left: 115px;
+  top: 550px;
   width: 642px;
   height: 160px;
-  font-size: 50px;
-  color: white;
+  font-size: 33px;
 }
   
 #eventTotal {
   position: absolute;
-  width: 350px;
+  width: 450px;
   height: 30px;
-  top: 840px;
-  left: 1205px;
-  font-size: 40px;
+  top: 670px;
+  left: 815px;
+  font-size: 30px;
+  text-align: right;
+}
+
+#eventTitle {
+  position:absolute;
+  width: 300px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#clock {
+  position: absolute;
+  left: 1025px;
+  top: -5px;
+  width: 300px;
+  font-size: 25px;
 }

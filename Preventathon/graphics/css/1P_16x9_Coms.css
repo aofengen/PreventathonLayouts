@@ -1,6 +1,6 @@
 #nameplate0 {
   left: 0px;
-  top: 278px;
+  top: 318px;
   width: 404px;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .pronouns {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #hostname {
@@ -25,36 +25,61 @@
   font-size: 25px;
 }
 
+#hostname {
+  position: absolute;
+  left: 80px;
+  top: 380px;
+  width: 404px;
+  font-size: 25px;
+}
+
 #hostpronouns {
   position: absolute;
-  left: -10px;
-  top: 348px;
+  left: 50px;
+  top: 410px;
+  font-size: 20px;
 }
 
 #comms1name {
   position: absolute;
-  top: 402px;
-  left: 45px;
+  left: 80px;
+  top: 450px;
   font-size: 25px;
 }
 
 #comms1pro {
   position: absolute;
-  top: 405px;
-  left: 210px;
+  left: 50px;
+  top: 480px;
+  font-size: 20px;
 }
 
 #comms2name {
   position: absolute;
-  top: 442px;
-  left: 45px;
-  font-size: 28px;
+  left: 280px;
+  top: 450px;
+  font-size: 25px;
 }
 
 #comms2pro {
   position: absolute;
-  top: 445px;
-  left: 210px;
+  left: 250px;
+  top: 480px;
+  font-size: 20px;
+}
+
+#comms3name {
+  position: absolute;
+  left: 80px;
+  top: 510px;
+  font-size: 25px;
+}
+
+#comms3pro {
+  position: absolute;
+  left: 50px;
+  top: 540px;
+  font-size: 23px;
 }
 
 #runInfoContainer {
@@ -63,8 +88,8 @@
   justify-content: center;
   align-content: center;
   position: absolute;
-  left: 685px;
-  top: 585px;
+  left: 710px;
+  top: 530px;
   width: 500px;
   height: 95px;
 }
@@ -89,8 +114,8 @@
   justify-content: center;
   position: unset;
   width: 500px;
-  height: 60px;
-  font-size: 60px;
+  height: 40px;
+  font-size: 40px;
 }
 
 #category {
@@ -109,11 +134,36 @@
 }
 
 #timerContainer {
-  left: 300px;
-  top: 576px;
+  left: 284px;
+  top: 516px;
   width: 484px;
   height: 119px;
   font-size: 40px;
+}
+
+#eventTotal {
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  top: 670px;
+  left: 815px;
+  font-size: 30px;
+  text-align: right;
+}
+
+#eventTitle {
+  position:absolute;
+  width: 300px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#clock {
+  position: absolute;
+  left: 1020px;
+  top: -5px;
+  width: 300px;
+  font-size: 25px;
 }
   
 
