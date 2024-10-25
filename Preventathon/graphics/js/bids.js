@@ -59,7 +59,7 @@ $(() => {
     });
 
     incentiveRep.on('change', (newVal) => {
-        if (newVal.length > 0) {
+        if (newVal.length != null) {
             let newIncentives = Array.from(newVal);
             for (let i = newIncentives.length - 1 ; i >= 0 ; i--) {
                 if (newIncentives[i].state != 'OPENED') {
