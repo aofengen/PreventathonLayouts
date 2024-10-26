@@ -126,27 +126,31 @@ $(() => {
                     children.splice(i, 1);
                 }
             }
-            children.sort(function(a,b){return b.total - a.total});
 
             $('#option1').text("");
             $('#option2').text("");
             $('#option3').text("");
             $('#otherOptions').text("");
 
-            for (let i = 0; i < 4; i++) {
-                if (i == 3 || i == newVal.length) {
-                    if (children.length - 3 > 0) {
-                        $('#otherOptions').text(`${children.length - 3} more options!`);
-                    } else {
-                        $('#otherOptions').text("");
+            if (children.length == 0) {
+                $('#option1').text("No options yet! Donate to be the first!");
+            } else {
+                children.sort(function(a,b){return b.total - a.total});
+                for (let i = 0; i < 4; i++) {
+                    if (i == 3 || i == newVal.length) {
+                        if (children.length - 3 > 0) {
+                            $('#otherOptions').text(`+ ${children.length - 3} more options!`);
+                        } else {
+                            $('#otherOptions').text("");
+                        }
+                        break;
                     }
-                    break;
+                    let option = $(`#option${i+1}`);
+                    option.text(`${children[i].name}:  $${children[i].total} CAD`);
                 }
-                let option = $(`#option${i+1}`);
-                option.text(`${children[i].name}:  $${children[i].total} CAD`);
             }
         }
-    })
+    });
 
     setInterval(() => {
         if (milestone) {
