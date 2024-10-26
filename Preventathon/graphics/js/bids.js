@@ -89,7 +89,7 @@ $(() => {
     });
 
     parentRep.on('change', (newVal) => {
-        if (newVal.length > 0) {
+        if (newVal != null) {
             let newBidWars = Array.from(newVal);
             for (let i = newBidWars.length - 1 ; i >= 0 ; i--) {
                 if (newBidWars[i].state != 'OPENED') {
@@ -121,8 +121,8 @@ $(() => {
         } else {
             let children = Array.from(newVal);
 
-            for (let i = children.length - 1; i > 0; i--) {
-                if (children[i].parent != randomBidWarId) {
+            for (let i = children.length - 1; i >= 0; i--) {
+                if (children[i].parent != randomBidWarId || children[i].state != 'OPENED') {
                     children.splice(i, 1);
                 }
             }
