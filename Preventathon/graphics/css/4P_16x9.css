@@ -1,102 +1,160 @@
-#cameraFill0 {
-  left: 11px;
-  top: 372px;
+.nameplateLogo {
+  width: 20px;
+  height: 20px;
 }
 
-#cameraFill1 {
-  left: 1016px;
-  top: 372px;
+.runnerText {
+  font-size: 18px;
 }
 
 #nameplate0 {
-  left: 258px;
-  top: 360px;
+  left: 468px;
+  top: 22px;
   width: 300px;
 }
 
 #runner0pro {
   position: absolute;
-  left: 240px;
+  left: 76px;
+  top: 43px;
+  font-size: 15px;
 }
 
 #nameplate1 {
-  right: 365px;
-  top: 360px;
+  left: 530px;
+  top: 265px;
   width: 270px;
 }
 
 #runner1pro {
   position: absolute;
-  right: -82px;
+  left: 85px;
+  top: 2px;
+  font-size: 15px;
 }
 
-#commsPlate {
-  position: fixed;
-  left: 295px;
-  top: 433px;
-  width: 330px;
+#nameplate2 {
+  left: 498px;
+  top: 358px;
+  width: 300px;
+}
+
+#runner2pro {
+  position: absolute;
+  left: 46px;
+  top: 45px;
+  font-size: 15px;
+}
+
+#nameplate3 {
+  left: 515px;
+  top: 603px;
+  width: 270px;
+}
+
+#runner3pro {
+  position: absolute;
+  top: 2px;
+  left: 95px;
+  font-size: 15px;
 }
 
 #hostname {
   position: fixed;
-  left: 290px;
-  top: 433px;
+  left: 575px;
+  top: 667px;
   width: 150px;
   height: 40px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #hostpronouns {
   position: fixed;
-  left: 393px;
-  top: 438px;
+  left: 545px;
+  top: 688px;
   width: 40px;
   height: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-#comms1name {
+#runInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   position: absolute;
-  left: 465px;
-  font-size: 25px;
+  left: -30px;
+  top: 650px;
+  width: 600px;
+  height: 78px;
 }
 
-#comms1pro {
-  position: absolute;
-  top: 6px;
-  height: 20px;
-  right: -363px;
-  font-size: 20px;
+#runInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 489px;
+  height: 55px;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 15px;
+  left: 50px;
 }
 
 #game {
-  left: 363px;
-  top: 476px;
-  width: 250px;
-  height: 60px;
-}
-
-#category {
-  right: 373px;
-  top: 476px;
-  width: 260px;
-  height: 60px;
-}
-
-#belowCategoryContainer {
-  left: 530px;
-  top: 525px;
-  width: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: 575px;
   height: 30px;
   font-size: 30px;
 }
 
+#category {
+  font-size: 15px;
+}
+
+#systemAndYear {
+  max-width: 33%;
+  font-size: 15px;
+}
+
+#estimate {
+  max-width: 33%;
+  font-size: 15px;
+}
+
 #timerContainer {
-  left: 530px;
-  top: 580px;
-  width: 210px;
-  height: 65px;
-  font-size: 36px;
+  left: 310px;
+  top: 256px;
+  width: 642px;
+  height: 160px;
+  font-size: 30px;
 }
   
+#eventTotal {
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  top: 650px;
+  left: 645px;
+  font-size: 30px;
+  text-align: right;
+}
 
+#eventTitle {
+  position:absolute;
+  width: 300px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#clock {
+  position: absolute;
+  left: 1020px;
+  top: -5px;
+  width: 300px;
+  font-size: 25px;
+}
